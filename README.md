@@ -3,7 +3,8 @@
 I wrote down my understanding of Doelling etal's (PNAS 2019) description of their Wilson-Cowan oscillator model.
 Happy to learn what I did wrong -- please let me know :)!
 
-myWilsonCowan.m implements the model as specified by Doelling etal (or at least as I understand it!).
+### myWilsonCowan.m 
+implements the model as specified by Doelling etal (or at least as I understand it!).
 
 WilsonCowanAtRest.m calls myWilsonCowan with the driving force set to 0 to check if it indeed has a 4 Hz resting activity (Doelling et al describe that for the parameters they chose, this should be the case).
 
@@ -11,13 +12,15 @@ WilsonCowanAtRest.m calls myWilsonCowan with the driving force set to 0 to check
 
 As we see in the figure above, this seems to be the case.
 
-doellingIntuition.m runs a simple periodic input into the oscillator model and a barbarically simple evoked model. I am checking if I can reproduce their figure 1 intuition (i.e. a variable phase difference between stimulus and response for constant lag LTI model and a constant phase difference with a variable time lag for the oscillator model). I would have liked to see the filtered responses in the figure by Doelling etal!
+###doellingIntuition.m 
+runs a simple periodic input into the oscillator model and a barbarically simple evoked model. I am checking if I can reproduce their figure 1 intuition (i.e. a variable phase difference between stimulus and response for constant lag LTI model and a constant phase difference with a variable time lag for the oscillator model). I would have liked to see the filtered responses in the figure by Doelling etal!
 
 ![alt text](https://github.com/cdaube/WilsonCowan/blob/master/Figures/Figure_EvOscDoellingIntuition.png)
 
 As far as I can see in the figure above, in this simple setup, everything seems to work more or less as expected.
 
-frequenciesIntensities.m runs more frequencies at different intensities into the evoked and oscillator model (calling runEvOsc.m which is a quick and dirty function copy-pasted from doellingIntuition.m). I didn't find any information on how Doelling et al set the intensity of their input (whether they normalised the input somehow or so) and was wondering if the output somehow depends on the input intensity.
+###frequenciesIntensities.m 
+runs more frequencies at different intensities into the evoked and oscillator model (calling runEvOsc.m which is a quick and dirty function copy-pasted from doellingIntuition.m). I didn't find any information on how Doelling et al set the intensity of their input (whether they normalised the input somehow or so) and was wondering if the output somehow depends on the input intensity.
 
 ![alt text](https://github.com/cdaube/WilsonCowan/blob/master/Figures/Figure_PhaseDiff_freqInt_evOsc.png)
 
