@@ -1,4 +1,4 @@
-pMap = colorcet('C9'); % colorcet function by Peter Kovesi ("Good Colour Maps: How to Design Them". arXiv:1509.03700 [cs.GR] 2015)
+pMap = colorcet('C8'); % colorcet function by Peter Kovesi ("Good Colour Maps: How to Design Them". arXiv:1509.03700 [cs.GR] 2015)
 
 % parameters
 fs = 100;
